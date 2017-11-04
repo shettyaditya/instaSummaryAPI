@@ -7,8 +7,6 @@ from django.shortcuts import get_object_or_404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Summarize
-from .serializers import summarizeSerializer
 from sumy.parsers.html import HtmlParser
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
@@ -24,9 +22,10 @@ SENTENCES_COUNT = 10
 class urlList(APIView):
 
     def get(self, request):
-        urls = Summarize.objects.all()
-        serializer = summarizeSerializer(urls, many=True)
-        return Response(serializer.data)
+        pass
+        # urls = Summarize.objects.all()
+        # serializer = summarizeSerializer(urls, many=True)
+        # return Response(serializer.data)
 
     def post(self, request):
         posturl = request.data['url']  # url to be summarized
