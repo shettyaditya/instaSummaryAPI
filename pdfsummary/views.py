@@ -1,6 +1,5 @@
 from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
-
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -24,8 +23,8 @@ class urlList(APIView):
     def get(self, request):
         pass
         # urls = Summarize.objects.all()
-        # serializer = summarizeSerializer(urls, many=True)
         # return Response(serializer.data)
+        # serializer = summarizeSerializer(urls, many=True)
 
     def post(self, request):
         posturl = request.data['url']  # url to be summarized
