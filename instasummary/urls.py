@@ -17,8 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns
 from summarizer import views
+from pdfsummary import pdfviews
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^summarizer/', views.urlList.as_view()),
+    url(r'^pdfsummary/', pdfviews.pdfSummary.as_view()),
 ]

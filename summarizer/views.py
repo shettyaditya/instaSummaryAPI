@@ -17,8 +17,8 @@ from sumy.nlp.stemmers import Stemmer
 from sumy.utils import get_stop_words
 
 
-LANGUAGE = "english"
-SENTENCES_COUNT = 10
+LANGUAGE = "czech"
+SENTENCES_COUNT = 20
 
 
 class urlList(APIView):
@@ -32,14 +32,14 @@ class urlList(APIView):
         posturl = request.data['url']  # url to be summarized
         parser = HtmlParser.from_url(posturl, Tokenizer(LANGUAGE))
         # or for plain text files
-        # parser = PlaintextParser.from_file("document.txt", Tokenizer(LANGUAGE))
+        # parser = Plaintext1Parser.from_file("document.txt", Tokenizer(LANGUAGE))
         stemmer = Stemmer(LANGUAGE)
         summarizer = Summarizer(stemmer)
         summarizer.stop_words = get_stop_words(LANGUAGE)
         summary = ''
         for sentence in summarizer(parser.document, SENTENCES_COUNT):
             summary += str(sentence)
-        # foo_instance = Summarize.objects.create(url=posturl, summarized=summary)
+            foo_instance = Summarize.objects.create(url=posturl, summarized=summary)
             html = "%s" % summary
         return Response(html)
 
