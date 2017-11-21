@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="838f0c24-cfe7-495c-a1c1-d6d8d266ad94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summarizer/views.py" afterPath="$PROJECT_DIR$/summarizer/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,8 +90,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/summarizer/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="119">
+              <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -656,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summarizer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="119">
+          <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

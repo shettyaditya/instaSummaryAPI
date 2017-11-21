@@ -31,7 +31,7 @@ class urlList(APIView):
     def post(self, request):
         posturl = request.data['url']  # url to be summarized
         sites = ['youtube', 'angel', 'twitter', 'hackerearth', 'salesforce', 'linkedin', 'facebook', 'instagram',
-                 'stackoverflow', 'hackerrank', 'google']
+                 'stackoverflow', 'hackerrank', 'google', 'geeksfogeeks']
         for s in sites:
             if posturl.__contains__(s):
                 siteerror = "This site cannot be summarized"
