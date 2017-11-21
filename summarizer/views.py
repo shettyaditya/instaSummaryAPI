@@ -18,7 +18,7 @@ from sumy.utils import get_stop_words
 
 
 LANGUAGE = "czech"
-SENTENCES_COUNT = 20
+SENTENCES_COUNT = 10
 
 
 class urlList(APIView):
