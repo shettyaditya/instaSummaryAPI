@@ -1,20 +1,17 @@
 from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
 
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
 from .models import Summarize
 from .serializers import summarizeSerializer
-from sumy.parsers.html import HtmlParser
-from sumy.parsers.plaintext import PlaintextParser
-from sumy.nlp.tokenizers import Tokenizer
-from sumy.summarizers.lsa import LsaSummarizer as Summarizer
-from sumy.nlp.stemmers import Stemmer
-from sumy.utils import get_stop_words
+
+from isummary.Parser.html import HtmlParser
+from isummary.Tokenizer.tokenizer import Tokenizer
+from isummary.Summary.textrank import LsaSummarizer as Summarizer
+from isummary.Tokenizer.stem import Stemmer
+from isummary.Tokenizer.getstopwords import get_stop_words
 
 
 LANGUAGE = "czech"
