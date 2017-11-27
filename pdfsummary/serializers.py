@@ -4,7 +4,7 @@ from rest_framework import serializers
 class summarizeSerializer(serializers.ModelSerializer):
 
     class Meta:
-        fields = ('url', 'summarized')
+        fields = ('text', 'summarized')
 
 
 

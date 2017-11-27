@@ -58,8 +58,8 @@ class urlList(APIView):
             summary += str(sentence)
             foo_instance = Summarize.objects.create(url=posturl, summarized=summary)
             html = "%s" % summary
-        return Response(html)
-
+        return Response(html
+)
 
 
 
